@@ -289,17 +289,19 @@ sr.reveal(`.footer, footer__container`, {
 });
 
 /*=============== LENIS SMOOTH SCROLL ===============*/
-const lenis = new Lenis({
-  lerp: 0.15,
-  smoothWheel: true,
-});
+if (window.matchMedia("(pointer: fine)").matches) {
+  const lenis = new Lenis({
+    lerp: 0.1,
+    smoothWheel: true,
+  });
 
-function raf(time) {
-  lenis.raf(time);
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
   requestAnimationFrame(raf);
 }
-
-requestAnimationFrame(raf);
 
 /*=============== VANILLA TILT 3D ===============*/
 // Only apply tilt to recent works on home page
