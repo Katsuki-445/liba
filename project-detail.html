@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--=============== FAVICON ===============-->
+    <link rel="icon" type="image/jpeg" href="assets/favicons/fav2.jpg">
+    <link rel="shortcut icon" href="assets/favicons/fav2.jpg">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title> LIBA </title>
+</head>
+
+<body>
+    <!--=============== CUSTOM CURSOR ===============-->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">LBS</a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            <i class='bx bx-home'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="portfolio.html" class="nav__link active-link">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="expertise.html" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">
+                            <i class='bx bx-message-square-dots'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Theme change button -->
+            <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <section class="project-detail section" id="project-detail">
+            <div class="project-detail__container container">
+                <a href="portfolio.html" class="project-detail__back">
+                    <i class='bx bx-left-arrow-alt'></i> Back to Portfolio
+                </a>
+
+                <span class="project-detail__category section__subtitle" id="project-category">Category</span>
+                <h2 class="project-detail__title section__title" id="project-title">Project Title</h2>
+
+                <div class="project-detail__mockups">
+                    <div class="project-detail__mockup" id="desktop-mockup">
+                        <span class="project-detail__mockup-label">Desktop View</span>
+                        <div class="project-detail__desktop">
+                            <div class="project-detail__desktop-header">
+                                <div class="project-detail__desktop-dot"></div>
+                                <div class="project-detail__desktop-dot"></div>
+                                <div class="project-detail__desktop-dot"></div>
+                            </div>
+                            <img src="" alt="" class="project-detail__desktop-img" id="desktop-img">
+                        </div>
+                    </div>
+
+                    <div class="project-detail__mockup" id="phone-mockup">
+                        <span class="project-detail__mockup-label">Phone View</span>
+                        <div class="project-detail__phone">
+                            <div class="project-detail__phone-notch"></div>
+                            <img src="" alt="" class="project-detail__phone-img" id="phone-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-detail__tech" id="project-tech">
+                    <!-- Tech tags injected by JS -->
+                </div>
+
+                <p class="project-detail__description" id="project-description">
+                    Project description goes here.
+                </p>
+
+                <div class="project-detail__stats" id="project-stats">
+                    <div class="project-detail__stats-grid">
+                        <div class="project-detail__stat">
+                            <span class="project-detail__stat-value" id="stat-performance">96%</span>
+                            <span class="project-detail__stat-label">Performance</span>
+                        </div>
+                        <div class="project-detail__stat">
+                            <span class="project-detail__stat-value" id="stat-loadtime">0.8s</span>
+                            <span class="project-detail__stat-label">Load Time</span>
+                        </div>
+                        <div class="project-detail__stat">
+                            <span class="project-detail__stat-value" id="stat-uptime">99.9%</span>
+                            <span class="project-detail__stat-label">Uptime</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/" target="_blank" class="button project-detail__live" id="live-link">
+                    <i class='bx bx-link-external'></i> View Live Site
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">LIBA</h1>
+
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="index.html" class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                    <a href="portfolio.html" class="footer__link">Portfolio</a>
+                </li>
+                <li class="footer__item">
+                    <a href="expertise.html" class="footer__link">Expertise</a>
+                </li>
+                <li class="footer__item">
+                    <a href="contact.html" class="footer__link">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <li class="footer__social-item">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://api.whatsapp.com/send?phone=+233264084871" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-whatsapp footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-linkedin footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram footer__social-icon'></i>
+                    </a>
+                </li>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; 2026 LBS. All rights reserved.
+            </span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== LENIS SMOOTH SCROLL ===============-->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+
+    <!--=============== VANILLA TILT 3D ===============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        const projects = [
+            // Websites
+            { id: 1, cat: 'websites', title: 'Hajamu Luxe', desc: 'A full-featured luxury e-commerce platform with cart, checkout, and secure payment integration.', tech: ['HTML', 'CSS', 'JavaScript', 'React'], desktopImg: 'assets/portfolio/website view/website desktop/hajamu laptopso.png', phoneImg: 'assets/portfolio/website view/website mobile/hajamu phonesobg.png', stats: { performance: '99%', loadtime: '0.6s', uptime: '99.9%' }, liveUrl: 'https://hajamu-luxe.vercel.app/' },
+            { id: 2, cat: 'websites', title: 'Dellino Exclusive', desc: 'A professional business website with CMS integration and premium blog layout.', tech: ['HTML', 'CSS', 'JavaScript', 'WordPress'], desktopImg: 'assets/portfolio/website view/website desktop/dellino laptopso.png', phoneImg: 'assets/portfolio/website view/website mobile/dellino phonesobg.png', stats: { performance: '94%', loadtime: '0.9s', uptime: '99.8%' }, liveUrl: 'https://dellinoexclusivedemo.vercel.app/' },
+            { id: 3, cat: 'websites', title: 'Limba', desc: 'A creative agency portfolio showcasing projects with smooth GSAP animations and 3D effects.', tech: ['HTML', 'CSS', 'JavaScript', 'GSAP'], desktopImg: 'assets/portfolio/website view/website desktop/limba laptopso.png', phoneImg: 'assets/portfolio/website view/website mobile/limbaphonesobg.png', stats: { performance: '99%', loadtime: '0.5s', uptime: '99.9%' }, liveUrl: 'https://limba-eosin.vercel.app' },
+            { id: 4, cat: 'websites', title: 'Volta Auto', desc: 'Premium property listing platform with advanced search and real-time map integration.', tech: ['HTML', 'CSS', 'JavaScript', 'Vue.js'], desktopImg: 'assets/portfolio/website view/website desktop/volta laptopso.png', phoneImg: 'assets/portfolio/website view/website mobile/voltaphonesobg.png', stats: { performance: '96%', loadtime: '0.7s', uptime: '99.7%' }, liveUrl: '#' },
+            { id: 5, cat: 'websites', title: 'Lumiere Beauty Studio', desc: 'A premium beauty and wellness studio website with elegant design and service booking system.', tech: ['HTML', 'CSS', 'JavaScript', 'Node.js'], desktopImg: 'assets/portfolio/website view/website desktop/lumiere laptopsobg (1).png', phoneImg: 'assets/portfolio/website view/website mobile/lumiere phonesobg.png', stats: { performance: '98%', loadtime: '0.8s', uptime: '99.9%' }, liveUrl: '#' },
+            { id: 18, cat: 'websites', title: 'PixCut Web', desc: 'A high-performance background removal tool with AI-powered edge detection and batch processing capabilities.', tech: ['HTML', 'CSS', 'JavaScript', 'AI'], desktopImg: 'assets/portfolio/website view/website desktop/pixcut laptop view.png', phoneImg: 'assets/portfolio/website view/website mobile/pixcut phone view.png', stats: { performance: '98%', loadtime: '0.4s', uptime: '99.9%' }, liveUrl: 'https://pixcutweb.pages.dev/' },
+            { id: 20, cat: 'websites', title: 'Prestige Reality', desc: 'A premium real estate platform showcasing luxury properties with advanced search, virtual tours, and seamless booking experience.', tech: ['HTML', 'CSS', 'JavaScript', 'React'], desktopImg: 'assets/portfolio/website view/website desktop/prestige reality laptopso.png', phoneImg: 'assets/portfolio/website view/website mobile/prestige reality phonesobg.png', stats: { performance: '97%', loadtime: '0.8s', uptime: '99.8%' }, liveUrl: '#' },
+            // APK
+            { id: 19, cat: 'apk', title: 'PixCut', desc: 'Mobile version of PixCut with offline background removal and quick edit features.', tech: ['Flutter', 'AI', 'Dart'], img: 'assets/portfolio/website view/website mobile/Pixcut apk.png', stats: { performance: '98%', loadtime: '0.5s', uptime: '99.8%' }, liveUrl: 'assets/PixCut_2.7.5.apk', isDownload: true },
+            // WebApps
+            { id: 11, cat: 'webapps', title: 'Verdict', desc: 'A premium website audit and scoring tool that providing honest, scored audits in seconds without registration.', tech: ['React', 'TypeScript', 'Node.js'], desktopImg: 'assets/portfolio/webapp view/verdict laptopso.png', phoneImg: '', stats: { performance: '97%', loadtime: '0.7s', uptime: '99.9%' }, liveUrl: 'https://verdict.wokehustle1.workers.dev' },
+            { id: 21, cat: 'webapps', title: 'VantaDocs', desc: 'A comprehensive document management platform with secure cloud storage, real-time collaboration, and advanced search capabilities.', tech: ['React', 'Node.js', 'MongoDB'], desktopImg: 'assets/portfolio/webapp view/vanta docs laptopso.png', phoneImg: '', stats: { performance: '98%', loadtime: '0.6s', uptime: '99.9%' }, liveUrl: 'https://vanta-docs.vercel.app/' },
+            { id: 13, cat: 'webapps', title: 'IdeaPulse', desc: 'A high-performance data analytics platform with real-time dynamic charts and automated reports.', tech: ['React', 'D3.js', 'Python'], desktopImg: 'assets/portfolio/webapp view/Idea-pulse webapp.png', stats: { performance: '99%', loadtime: '0.5s', uptime: '99.9%' }, liveUrl: '#' }
+        ];
+
+        function getProjectFromURL() {
+            const hash = window.location.hash.substring(1); // e.g. "websites-1"
+            if (!hash) return projects[0];
+
+            const [cat, idStr] = hash.split('-');
+            const id = parseInt(idStr);
+            
+            console.log('Hash:', hash, 'Cat:', cat, 'ID:', id);
+            return projects.find(p => p.cat === cat && p.id === id) || projects[0];
+        }
+
+        window.addEventListener('hashchange', renderProject);
+
+        function renderProject() {
+            const project = getProjectFromURL();
+            const categoryMap = {
+                'websites': 'Websites',
+                'apk': 'APK',
+                'webapps': 'WebApps'
+            };
+            document.getElementById('project-category').textContent = categoryMap[project.cat] || 'Project';
+            document.getElementById('project-title').textContent = project.title;
+            document.getElementById('project-description').textContent = project.desc;
+
+            const techContainer = document.getElementById('project-tech');
+            techContainer.innerHTML = project.tech.map(t => `<span class="project-detail__tech-tag">${t}</span>`).join('');
+
+            const desktopImg = project.desktopImg || project.img;
+            const phoneImg = project.phoneImg || (project.cat === 'apk' ? project.img : '');
+
+            document.getElementById('desktop-img').src = desktopImg;
+            if (phoneImg) document.getElementById('phone-img').src = phoneImg;
+
+            const desktopMockup = document.getElementById('desktop-mockup');
+            const phoneMockup = document.getElementById('phone-mockup');
+            const mockupsContainer = document.querySelector('.project-detail__mockups');
+            
+            mockupsContainer.classList.remove('single-mockup', 'apk-mockup', 'webapps-mockup', 'original-layout');
+
+            if (project.id === 17) {
+                mockupsContainer.classList.add('original-layout');
+            }
+
+            if (project.cat === 'webapps') {
+                desktopMockup.style.display = 'block';
+                phoneMockup.style.display = 'none';
+                mockupsContainer.classList.add('single-mockup', 'webapps-mockup');
+            } else if (project.cat === 'apk') {
+                desktopMockup.style.display = 'none';
+                phoneMockup.style.display = 'block';
+                mockupsContainer.classList.add('single-mockup', 'apk-mockup');
+            } else {
+                desktopMockup.style.display = 'block';
+                phoneMockup.style.display = 'block';
+            }
+
+            document.getElementById('stat-performance').textContent = project.stats.performance;
+            document.getElementById('stat-loadtime').textContent = project.stats.loadtime;
+            document.getElementById('stat-uptime').textContent = project.stats.uptime;
+
+            const liveLink = document.getElementById('live-link');
+            liveLink.href = project.liveUrl || '#';
+            if (project.isDownload) {
+                liveLink.innerHTML = "<i class='bx bx-download'></i> Download Application";
+                liveLink.removeAttribute('target');
+            } else {
+                liveLink.innerHTML = "<i class='bx bx-link-external'></i> View Live Site";
+                liveLink.setAttribute('target', '_blank');
+            }
+        }
+
+        renderProject();
+    </script>
+</body>
+
+</html>
+

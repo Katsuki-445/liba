@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="icon" type="image/jpeg" href="assets/favicons/fav2.jpg">
+    <link rel="shortcut icon" href="assets/favicons/fav2.jpg">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title> LIBA </title>
+</head>
+
+<body>
+    <!--=============== CUSTOM CURSOR ===============-->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">LBS</a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            <i class='bx bx-home'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="portfolio.html" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="expertise.html" class="nav__link active-link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">
+                            <i class='bx bx-message-square-dots'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Theme change button -->
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <section class="project-detail section" id="certificate-detail">
+            <div class="project-detail__container container">
+                <a href="expertise.html" class="project-detail__back">
+                    <i class='bx bx-left-arrow-alt'></i> Back to Expertise
+                </a>
+
+                <span class="project-detail__category section__subtitle" id="cert-issuer">Issuer</span>
+                <h2 class="project-detail__title section__title" id="cert-title">Certificate Title</h2>
+
+                <div class="certificate-window">
+                    <div class="certificate-window__header">
+                        <div class="certificate-window__dot"></div>
+                        <div class="certificate-window__dot"></div>
+                        <div class="certificate-window__dot"></div>
+                        <span class="certificate-window__title">Credential Preview</span>
+                    </div>
+                    <div class="certificate-window__content">
+                        <img src="" alt="Certificate" id="cert-img" class="certificate-window__img">
+                    </div>
+                </div>
+
+                <div class="project-detail__tech" id="cert-details">
+                    <!-- ID and Date tags -->
+                </div>
+
+                <p class="project-detail__description" id="cert-description">
+                    Loading description...
+                </p>
+
+                <div class="project-detail__stats">
+                    <div class="project-detail__stats-grid">
+                        <div class="project-detail__stat">
+                            <i class='bx bx-award stat-icon'></i>
+                            <span class="project-detail__stat-label" id="cert-type">Professional Certification</span>
+                        </div>
+                        <div class="project-detail__stat">
+                            <i class='bx bx-check-shield stat-icon'></i>
+                            <span class="project-detail__stat-label" id="cert-status">Verified Credential</span>
+                        </div>
+                        <div class="project-detail__stat">
+                            <i class='bx bx-calendar stat-icon'></i>
+                            <span class="project-detail__stat-label" id="cert-date">Issued 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="" download class="button project-detail__live" id="download-link">
+                    <i class='bx bx-download'></i> Download PDF Certificate
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">LIBA</h1>
+
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="index.html" class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                    <a href="portfolio.html" class="footer__link">Portfolio</a>
+                </li>
+                <li class="footer__item">
+                    <a href="expertise.html" class="footer__link">Expertise</a>
+                </li>
+                <li class="footer__item">
+                    <a href="contact.html" class="footer__link">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <li class="footer__social-item">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://api.whatsapp.com/send?phone=+233264084871" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-whatsapp footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-linkedin footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram footer__social-icon'></i>
+                    </a>
+                </li>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; 2026 LBS. All rights reserved.
+            </span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== LENIS SMOOTH SCROLL ===============-->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+
+    <!--=============== VANILLA TILT 3D ===============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        const certificates = {
+            'google-analytics': {
+                title: 'Google Analytics Certification',
+                issuer: 'Google',
+                id: '180485062',
+                date: 'April 22, 2026',
+                description: 'Certified in utilizing Google Analytics 4 to track and analyze website traffic, user behavior, and conversion metrics to drive data-informed business decisions.',
+                img: 'assets/certificates/google analytics.png',
+                pdf: 'assets/certificates/pdf/google analytics.pdf'
+            },
+            'google-ads': {
+                title: 'Google Ads Search Certification',
+                issuer: 'Google',
+                id: '180487128',
+                date: 'April 22, 2026',
+                description: 'Expertise in creating and optimizing Google Search campaigns, keyword research, bidding strategies, and performance measurement for ROI-focused advertising.',
+                img: 'assets/certificates/google ads.png',
+                pdf: 'assets/certificates/pdf/goog ads search.pdf'
+            },
+            'hubspot-seo': {
+                title: 'SEO Certified',
+                issuer: 'HubSpot Academy',
+                id: '3dac0788cf384cc9943134c5acca8f80',
+                date: 'March 29, 2026',
+                description: 'Mastery of on-page SEO, technical SEO, link building, and content strategy to improve search engine visibility and organic traffic growth.',
+                img: 'assets/certificates/hubspot.png',
+                pdf: 'assets/certificates/pdf/hubspot.pdf'
+            },
+            'semrush-ai': {
+                title: 'AI Visibility Essentials',
+                issuer: 'Semrush Academy',
+                id: '28bb178109',
+                date: 'March 29, 2026',
+                description: 'Specialized in leveraging AI tools and Semrush technologies to enhance digital visibility, content optimization, and competitive search analysis.',
+                img: 'assets/certificates/sem rush shot.png',
+                pdf: 'assets/certificates/pdf/sem rush.pdf'
+            },
+            'hp-data': {
+                title: 'Data Science & Analytics',
+                issuer: 'HP Foundation / HP LIFE',
+                id: '2901fbe9-3f79-4698-8804-4f6e15d0ff7b',
+                date: 'March 29, 2026',
+                description: 'Advanced knowledge in data-driven decision making, analytical tools, and methodologies for business intelligence and growth forecasting.',
+                img: 'assets/certificates/Data Science & Analytics.png',
+                pdf: 'assets/certificates/pdf/Data Science & Analytics.pdf'
+            },
+            'hubspot-dm': {
+                title: 'Digital Marketing Certified',
+                issuer: 'HubSpot Academy',
+                id: '100b2299787f4637a7ca783066b7702c',
+                date: 'May 9, 2026',
+                description: 'Comprehensive certification covering content marketing, social media strategy, search engine optimization, and email marketing to drive business growth through inbound methodologies.',
+                img: 'assets/certificates/digital marketing.png',
+                pdf: 'assets/certificates/pdf/digital marketing.pdf'
+            },
+            'google-ads-app': {
+                title: 'Google Ads Apps Certification',
+                issuer: 'Google',
+                id: '181958681',
+                date: 'May 9, 2026',
+                description: 'Certified in creating and optimizing Google App campaigns to drive app installs and in-app actions across Google\'s largest properties like Search, Play, and YouTube.',
+                img: 'assets/certificates/google ads app.png',
+                pdf: 'assets/certificates/pdf/google ads app.pdf'
+            },
+            'semrush-traffic': {
+                title: 'Traffic & Market Toolkit Crash Course',
+                issuer: 'Semrush Academy',
+                id: 'ff692bdb90',
+                date: 'May 9, 2026',
+                description: 'Mastery of Semrush market analysis tools to identify competitors, analyze audience behavior, and discover growth opportunities through data-driven market research.',
+                img: 'assets/certificates/traffic and market toolkit.png',
+                pdf: 'assets/certificates/pdf/traffic and market toolkit.pdf'
+            },
+            'cisco-cyber': {
+                title: 'Introduction to Cybersecurity',
+                issuer: 'Cisco Networking Academy',
+                id: '4e59d86h8f',
+                date: 'May 10, 2026',
+                description: 'Foundational knowledge in cybersecurity, covering the importance of being safe online, common cyber threats, attacks, and vulnerabilities, and how organizations protect their operations.',
+                img: 'assets/certificates/introduction to cybersecurity.png',
+                pdf: 'assets/certificates/pdf/introduction to cybersecurity.pdf'
+            }
+        };
+
+        function renderCertificate() {
+            const certId = window.location.hash.substring(1) || 'google-analytics';
+            const cert = certificates[certId] || certificates['google-analytics'];
+
+            document.getElementById('cert-issuer').textContent = cert.issuer;
+            document.getElementById('cert-title').textContent = cert.title;
+            document.getElementById('cert-description').textContent = cert.description;
+            document.getElementById('cert-img').src = cert.img;
+            document.getElementById('download-link').href = cert.pdf;
+            
+            const detailsContainer = document.getElementById('cert-details');
+            detailsContainer.innerHTML = `
+                <span class="project-detail__tech-tag">Credential ID: ${cert.id}</span>
+                <span class="project-detail__tech-tag">Issued: ${cert.date}</span>
+            `;
+
+            document.getElementById('cert-date').textContent = `Issued ${cert.date.split(',')[1].trim()}`;
+        }
+
+        window.addEventListener('hashchange', renderCertificate);
+        renderCertificate();
+    </script>
+
+    <style>
+        .certificate-window {
+            background-color: var(--container-color);
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            margin: 2rem auto 3rem;
+            max-width: 900px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .certificate-window__header {
+            background-color: rgba(255,255,255,0.05);
+            padding: 0.75rem 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .certificate-window__dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #ff5f56;
+        }
+        .certificate-window__dot:nth-child(2) { background-color: #ffbd2e; }
+        .certificate-window__dot:nth-child(3) { background-color: #27c93f; }
+
+        .certificate-window__title {
+            margin-left: 1rem;
+            font-size: var(--smaller-font-size);
+            color: var(--text-color-light);
+            font-family: monospace;
+        }
+
+        .certificate-window__content {
+            padding: 1rem;
+            background-color: #f0f0f0; /* Light bg to contrast with white certificates */
+        }
+
+        .certificate-window__img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 0.25rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .stat-icon {
+            font-size: 1.5rem;
+            color: var(--first-color);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+    </style>
+</body>
+
+</html>
