@@ -43,14 +43,34 @@ modalViews.forEach((mv) => {
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 if (document.querySelector(".work__container")) {
-  let mixer = mixitup(".work__container", {
+  let config = {
     selectors: {
       target: ".work__card",
     },
     animation: {
       duration: 300,
     },
-  });
+  };
+
+  if (document.querySelector(".work__filters")) {
+    let savedFilter = sessionStorage.getItem("portfolio-filter") || "all";
+    config.load = {
+      filter: savedFilter
+    };
+
+    // Also update active class on page load
+    setTimeout(() => {
+      const workLinksLoad = document.querySelectorAll(".work__item");
+      workLinksLoad.forEach((wl) => {
+        wl.classList.remove("active-work");
+        if (wl.getAttribute("data-filter") === savedFilter) {
+          wl.classList.add("active-work");
+        }
+      });
+    }, 0);
+  }
+
+  let mixer = mixitup(".work__container", config);
 }
 
 /* Link active work */
@@ -66,6 +86,9 @@ function activeWork(workLink) {
 workLinks.forEach((wl) => {
   wl.addEventListener("click", () => {
     activeWork(wl);
+    if (document.querySelector(".work__filters")) {
+      sessionStorage.setItem("portfolio-filter", wl.getAttribute("data-filter"));
+    }
   });
 });
 
